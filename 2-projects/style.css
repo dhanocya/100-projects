@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: pink;
+}
+
+.load, main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cir{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    margin: 1em;
+    border-radius: 50%;
+    animation: ani 3s infinite;
+}
+
+@keyframes ani {
+    0%{
+        height: 0px;
+        width: 0px;
+    }
+
+    20%{
+        height: 50px;
+        width: 50px
+    }
+
+    40%{
+        background-color: yellow;
+        height: px;
+        width: 50px;
+    }
+}
+
+.ol{
+    background-color: blue;
+    animation: oko 1s infinite;
+}
+
+@keyframes oko {
+    0%{
+        transform: scale(1);
+    }
+
+    20%{
+        background-color: rgb(23, 119, 246);
+        transform: translateX(100px);
+        transform: translateY(-100px);
+    }
+
+    40%{
+        width: 10px;
+        height: 20px;
+    }
+}
