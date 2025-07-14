@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 2em;
+    background-color: wheat;
+    padding: 1rem;
+    border-bottom: 5px solid gainsboro;
+    transition: all 0.5s;
+
+    &:hover{
+        border-bottom: none;
+        filter: blur(1px);
+        box-shadow: 0 5px 45px 5px gainsboro;
+    }
+}
+
