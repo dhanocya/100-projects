@@ -18,7 +18,7 @@ body{
 }
 
 a{
-    position: absolute;
+    position: relative;
     text-decoration: none;
     text-transform: uppercase;
     padding: 1rem 4rem;
@@ -44,6 +44,7 @@ a:before{
 
 a:hover:before{
     transform: scaleX(1.4) scaleY(1.6);
+    opacity: 30%;
 }
 
 a:hover{
