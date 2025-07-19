@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(225, 56, 84);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    font-size: 2rem;
+    list-style: none;
+    margin: 1rem;
+    transition: all 0.2s;
+    padding: 2px;
+}
+
+li:hover{
+    border: 1px solid honeydew;
+    color: honeydew;
+}
+
