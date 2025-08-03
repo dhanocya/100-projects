@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    transition: all ease-in;
+}
+
+.container:hover{
+    box-shadow: 5px 5px 5px rgb(155, 123, 123);
+}
+
+.container img{
+    width: 50vw;
+    border-radius: 20px;
+}
+
+.container p, h1 {
+    margin: 10px;
+}
+
+img {
+    border: 1px solid ;
+}

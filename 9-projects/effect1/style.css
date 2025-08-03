@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: ani 1s linear;
+    z-index: -2;
+    overflow: hidden;
+}
+.layer{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    backdrop-filter: blur(10px);
+}
+
+section{
+    background-color: rgb(208, 231, 251);
+    width: 50vw;
+    height: auto;
+    position: relative;
+}
+
+.content{
+    background: rgba(247, 247, 244, 0.5);
+    backdrop-filter: blur(4px);
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes ani {
+    0%{
+        transform: scale(5);
+    }
+}
+
+img{
+    width: 50vw;
+}
+
+section:hover .content{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
