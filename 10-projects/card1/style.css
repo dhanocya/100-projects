@@ -8,6 +8,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
 }
 
 .container{
@@ -28,6 +29,7 @@ body{
     visibility: hidden;
     opacity: 0;
     z-index: -1;
+    padding: 1rem;
 }
 
 .container:hover .box{
