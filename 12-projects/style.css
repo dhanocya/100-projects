@@ -1,0 +1,17 @@
+body{
+    height: 100vh;
+    background: linear-gradient(red,rgb(25, 193, 235));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tool{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+}
+
+#text:hover #tool {
+    opacity: 1;
+}
