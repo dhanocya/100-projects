@@ -1,0 +1,47 @@
+.warraper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.warraper .loader {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 20px;
+}
+
+.loader .load {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: pink;
+    margin: 0 20px;
+    animation: load 0.8s infinite;
+}
+
+.loader .load.one{
+    animation-delay: 0.3s;
+}
+.loader .load.two{
+    animation-delay: 0.5s;
+}
+.loader .load.three{
+    animation-delay: 0.7s;
+}
+
+@keyframes load {
+    0%{
+        width: 30px;
+        height: 30px;
+    }
+
+    50%{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+body{
+    background-color: rgb(129, 147, 147);
+}

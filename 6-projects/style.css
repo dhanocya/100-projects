@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 800px;
+    height: 500px;
+    background-color: pink;
+    position: relative;
+}
+
+.clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Added transition for a smooth effect! */
+    transition: clip-path 0.5s ease-in-out;
+}
+
+.clip1 {
+    background: url(https://images.pexels.com/photos/1528640/pexels-photo-1528640.jpeg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 46% 0, 39% 100%, 0 100%);
+}
+
+.clip2 {
+    background: url(https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(19% 0, 87% 0, 64% 100%, 33% 100%);
+}
+
+.clip3 {
+    background: url(https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(82% 0, 100% 0, 100% 100%, 63% 100%);
+}
+
+/* --- CORRECTED HOVER EFFECT --- */
+/* This single rule now applies to ALL .clip elements when hovered */
+.clip:hover {
+    /* Correct polygon for a full rectangle */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}

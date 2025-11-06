@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color code</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2em;
+        }
+
+        button{
+            width: 5em;
+            height: 2em;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <button class="btn">click</button>
+        <p>color: <span class="code"</span></p>
+    </main>
+
+    <script>
+        let btn = document.querySelector(".btn")
+        let code = document.querySelector(".code")
+
+        function randomNum() {
+            let latters = "1234567890abcdef"
+            let color = "#"
+
+            for(i = 0; i < 6; i++){
+                color += latters[Math.floor(Math.random() * 16)]
+            }
+            return color
+        }
+
+        btn.addEventListener("click", () => {
+            document.body.style.background = randomNum()
+            code.innerHTML = randomNum()
+        })
+    </script>
+</body>
+</html>

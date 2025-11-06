@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgContainer{
+    width: 200px;
+    height: 200px;
+    background-color: palegoldenrod;
+    margin: 0.5px;
+    transform-style: preserve-3d;
+    transform: perspective(100px) rotateY(0deg);
+}

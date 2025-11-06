@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: crimson;
+}
+
+.section{
+    background-color: whitesmoke;
+    margin: 1em;
+    padding: 1em;
+    font-family: sans-serif;
+    width: 50vw;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar{
+    background: linear-gradient(47deg, yellow, red);
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(45deg,blue, yellow);
+    border-radius: 10px;
+}

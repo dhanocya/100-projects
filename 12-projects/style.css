@@ -1,0 +1,37 @@
+body{
+    height: 100vh;
+    background: linear-gradient(red,rgb(25, 193, 235));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tool{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: wheat;
+    white-space: nowrap;
+    padding: 10px 15px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#tool::before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);  
+}
+
+#text:hover  #tool {
+    top: -130%;
+    visibility: visible; 
+    opacity: 1;
+    background-color: pink;
+}

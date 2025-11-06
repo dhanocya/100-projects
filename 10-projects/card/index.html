@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>photop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="sec"></div>
+
+      <div class="tbox">
+        <img
+          src="https://images.pexels.com/photos/1391498/pexels-photo-1391498.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          alt=""
+        />
+        <div class="text">
+          <h1>tonu</h1>
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+        const tbox = document.querySelector(".tbox")
+        const box = document.querySelector(".box")
+        const sec = document.querySelector(".sec")
+
+        tbox.addEventListener("mouseover", () =>{
+            box.classList.add("hello")
+            sec.classList.add("sco")
+        })
+
+        tbox.addEventListener("mouseout", () =>{
+            box.classList.remove("hello")
+            sec.classList.remove("sco")
+        })
+    </script>
+
+  </body>
+</html>

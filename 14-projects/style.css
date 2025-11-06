@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: azure;
+    height: 400px;
+    width: 300px;
+}
+
+.imgholder{
+    height: 70%;
+    width: 100%;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 30px;
+}
+
+.text button{
+    padding: 10px 15px;
+    background: rgb(170, 232, 211);
+    transition: 0.2s ease;
+
+    &:hover{
+        background: aquamarine;
+        border: 2px solid aquamarine;
+    }
+}

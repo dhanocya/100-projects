@@ -1,0 +1,51 @@
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    position: relative;
+}
+
+.notify{
+    background: rgb(172, 172, 238);
+    min-width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 240px;
+    top: 330px;
+    visibility: hidden;
+    font-weight: 900;
+    font-family: sans-serif;
+    animation: ani 1s infinite;
+}
+
+i{
+    font-size: 4em;
+    color: blue;
+}
+
+button{
+    padding: 1em 2em;
+    background-color: rgb(146, 146, 248);
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: 0.2s all ease-in-out;
+
+    &:active{
+        padding: 0.9em 2em;
+        background-color: rgb(205, 205, 239);
+    }
+}
+
+@keyframes ani {
+    80%{
+        transform: scale(0.9);
+    }
+}
