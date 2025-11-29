@@ -30,7 +30,7 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url("https://plus.unsplash.com/premium_photo-1673953509975-576678fa6710?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGRvY3RvcnxlbnwwfHwwfHx8MA%3D%3D");
+  background-image: url("https://cdn.pixabay.com/photo/2020/04/03/00/22/doctor-4997061_640.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -80,6 +80,6 @@ label {
 }
 
 .card {
-  height: 200px;
+  height: clamp(auto,auto,800px);
   width: clamp(100px, 60%, 800px);
 }
