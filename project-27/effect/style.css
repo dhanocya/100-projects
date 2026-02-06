@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh ;
+}
+
+section{
+    width: 50vw;
+    position: relative;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+
+section > img{
+    width: 100%;
+    border: 2px solid ;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    backdrop-filter: blur(50px);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(-100%);
+}
+
+section:hover .content{
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+}

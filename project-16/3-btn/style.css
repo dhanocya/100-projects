@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+a{
+    padding: 2rem 3rem;
+    background-color: black;
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+a::before{
+    position: absolute;
+    content: "lets go";
+    background-color: crimson;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover::before{
+    height: 100%;
+    width: 100%;
+    visibility: visible;
+    top: 0;
+    left: 0;
+}

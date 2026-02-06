@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.message{
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    position: relative;
+}

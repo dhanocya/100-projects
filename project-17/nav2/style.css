@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+ul{
+    display: flex ;
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+li{
+    list-style: none;
+    transition: all 0.5s;
+    border-left: 2px solid rgb(245, 22, 59);
+    &:hover{
+        background-color: rgb(246, 57, 88);
+        border-left: 5px solid pink;
+        rotate: 5deg;
+        box-shadow: 0 0 4px 2px pink;
+    }
+}
+
+a{
+    text-decoration: none;
+}

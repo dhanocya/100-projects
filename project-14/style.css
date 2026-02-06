@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(50deg, yellow,crimson, blue, pink);
+    height: 100vh;
+    animation: anime 6s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+@keyframes anime {
+    20%{
+        background: linear-gradient(51deg, crimson,blue,pink,yellow);
+        cursor: help;
+    }
+    40%{
+        background: linear-gradient(50deg, blue,pink,yellow, crimson);
+        cursor: all-scroll;
+    }
+    60%{
+        background: linear-gradient(50deg,pink,yellow, crimson,blue);
+        cursor: crosshair;
+    }
+    80%{
+        background: linear-gradient(50deg,yellow, crimson, blue, pink);
+        cursor: not-allowed;
+    }
+}
+
+
+main{
+    width: 70%;
+    height: 70%;
+    background-color: transparent;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px yellow;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box button{
+    font-family: sans-serif;
+    padding: 1em;
+    margin: 5px;
+    background-color: rgb(163, 207, 247);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+
+    &:hover{
+        background: white;
+        border: none;
+    }
+}

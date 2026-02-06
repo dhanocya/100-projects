@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.box{
+    width: 400px;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    font-size: 3em;
+}
+
+input{
+    width: 400px;
+    height: 80px;
+    font-size: 3em;
+}
+
+.equal{
+    width: 400px;
+    height: 80px;
+}
+
+.btnBox{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+}
