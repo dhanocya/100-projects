@@ -1,0 +1,11 @@
+main{
+    width: 500px;
+    height: 500px;
+    background-color: red;
+}
+
+.tiles{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(210, 210, 216);
+}

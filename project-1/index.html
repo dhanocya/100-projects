@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="m">
+        <div>
+          <h1>logo</h1>
+        </div>
+
+        <div><button>contect us</button></div>
+
+        <div>
+          <h1>=</h1>
+        </div>
+      </div>
+
+      <div class="b">
+        <p>hdll</p>
+        <p>hdll</p>
+        <p>hdsf</p>
+        <p>hdll</p>
+        <button>hello bro</button>
+      </div>
+    </main>
+
+    <script>
+
+        let btn = document.querySelector("button")
+        let box = document.querySelector(".b")
+
+        btn.addEventListener("click", () => {
+            let count = 0;
+            if (count == 1){
+                box.style.display = "none"
+                count = 0;
+            }
+            else{
+                box.style.display = "block"
+                count = 1;
+            }
+        })
+    </script>
+  </body>
+</html>

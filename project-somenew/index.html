@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>infinite gallary</title>
+</head>
+<body>
+    <div id="gallary" class="gallary-grid"></div>
+    <div id="scroll-anchor" style="height: 20px;"></div>
+
+    <script>
+        const handleintersect = (entries) => {
+            entries.forEach(element => {
+                if (element.isIntersecting) {
+                    loadMoreImg()
+                }
+            });
+        }
+
+        const options = {
+            root: null,
+            threshold: 1.0
+        }
+    
+    </script>
+</body>
+</html>

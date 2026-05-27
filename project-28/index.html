@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loading animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="loading-txt">
+            0%
+        </div>
+    </main>
+
+    <script>
+        const back = document.querySelector("main")
+const txt = document.querySelector(".loading-txt")
+
+let load = 0;
+let int = setInterval(bluring, 30)
+
+function bluring() {
+    load++
+
+    if (load > 99) {
+        clearInterval(int)
+    }
+
+    // अब यह 100% पर रुक जाएगा
+    txt.innerHTML = `${load}%`;
+
+    // Opacity: 1 से 0 की तरफ जाएगी (गायब होगा)
+    txt.style.opacity = scale(load, 0, 100, 1, 0)
+
+    // Blur: 30px से 0px की तरफ जाएगा (साफ होगा)
+    back.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
+}
+
+// सही Scale फंक्शन (Parameters का क्रम ध्यान से देखें)
+const scale = (num, in_min, in_max, out_min, out_max) => {
+    return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min
+}
+
+    </script>
+</body>
+</html>
